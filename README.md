@@ -1,5 +1,11 @@
 # Logical Closed Loop: Uncovering Object Hallucinations in Large Vision-Language Models
 
+
+<!-- <div align="center"> -->
+[![Arxiv](https://img.shields.io/badge/Paper-Arxiv-red)](https://arxiv.org/pdf/2402.11622.pdf)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<!-- </div> -->
+
 Source code for the paper "Logical Closed Loop: Uncovering Object Hallucinations in Large Vision-Language Models". We are the first to detect and mitigate object hallucinations in LVLMs by themselves through logical closed loops.
 
 ## Overview
@@ -13,13 +19,22 @@ Source code for the paper "Logical Closed Loop: Uncovering Object Hallucinations
 
 
 
+## Citation
+If you find this repo useful, please consider citing:
+```
+@article{wu2024logical,
+      title={Logical Closed Loop: Uncovering Object Hallucinations in Large Vision-Language Models}, 
+      author={Junfei Wu and Qiang Liu and Ding Wang and Jinghao Zhang and Shu Wu and Liang Wang and Tieniu Tan},
+      journal={arXiv preprint arXiv:2402.11622},
+      year={2024},
+}
+```
 
 ## Acknowledgment
-
-- [mPLUG-Owl][https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl]
-- [MiniGPT-4][https://github.com/Vision-CAIR/MiniGPT-4]
-- [LLaVA][https://github.com/haotian-liu/LLaVA]
-- [QWEN-VL][https://github.com/QwenLM/Qwen-VL]
-- [Woodpecker][https://github.com/BradyFU/Woodpecker]
+- [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl)
+- [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
+- [LLaVA](https://github.com/haotian-liu/LLaVA)
+- [QWEN-VL](https://github.com/QwenLM/Qwen-VL)
+- [Woodpecker](https://github.com/BradyFU/Woodpecker)
 
 We thank them for their great contribution to the research community of LVLMs.
