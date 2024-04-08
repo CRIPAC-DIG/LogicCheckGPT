@@ -517,7 +517,7 @@ def get_refinement(sample):
         "Yes":1,
         "No": 0,
     }
-    threshold = 0.6
+    threshold = 0.4
     query = sample["query"]
     passage = sample["input_desc"]
     sup_info_positive = []
