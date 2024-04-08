@@ -20,7 +20,7 @@ Source code for the paper "Logical Closed Loop: Uncovering Object Hallucinations
 ## Requirements
 
 1. Create environment
-- You can set up the environment for running code in this repository. The environment.yml file supports mPLUG-Owl, MiniGPT4, and QWEN-VL-Chat.
+- You can set up the environment for running code in this repository. The `environment.yml` file supports mPLUG-Owl, MiniGPT4, and QWEN-VL-Chat.
 ```
 conda env create -f environment.yml
 conda activate LogicCheckGPT
