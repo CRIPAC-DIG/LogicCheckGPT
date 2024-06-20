@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <!-- </div> -->
 
-Source code for the paper "Logical Closed Loop: Uncovering Object Hallucinations in Large Vision-Language Models". We are the first to detect and mitigate object hallucinations in LVLMs by themselves through logical closed loops.
+Source code for the ACL 2024 paper "Logical Closed Loop: Uncovering Object Hallucinations in Large Vision-Language Models". We are the first to detect and mitigate object hallucinations in LVLMs by themselves through logical closed loops.
 
 ## Overview
 
