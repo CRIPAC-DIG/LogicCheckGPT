@@ -58,6 +58,7 @@ For different LVLMs, begin by preparing the project or checkpoints, and then exe
     3. Specify the openai.api_key and data path.
     4. Run `./logiccheckgpt/check_llava.py`.
     5. Finally, execute the evaluation script in `./evaluate/` to calculate the metrics.
+    
 **Note**:
 
 - In this repository, we offer the code utilizing GPT-3.5-turbo-0125 instead of the previously mentioned GPT-3.5-turbo, chosen for its remarkable cost-effectiveness. Nevertheless, through our verification process, we have confirmed their performances are close.
