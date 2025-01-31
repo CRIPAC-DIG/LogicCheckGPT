@@ -52,7 +52,12 @@ For different LVLMs, begin by preparing the project or checkpoints, and then exe
     3. Specify the openai.api_key and data path.
     4. Run `./logiccheckgpt/check_mplug.py`.
     5. Finally, execute the evaluation script in `./evaluate/` to calculate the metrics.
-
+- **LLaVA-1.5** (`./logiccheckgpt/check_llava.py`)
+    1. Clone the [project](https://github.com/haotian-liu/LLaVA) and specify it at Line 16
+    2. Download the checkpoint [llava-v1.5-7b](https://huggingface.co/liuhaotian/llava-v1.5-7b) and specify it at Line 35 variable`model_path`.
+    3. Specify the openai.api_key and data path.
+    4. Run `./logiccheckgpt/check_llava.py`.
+    5. Finally, execute the evaluation script in `./evaluate/` to calculate the metrics.
 **Note**:
 
 - In this repository, we offer the code utilizing GPT-3.5-turbo-0125 instead of the previously mentioned GPT-3.5-turbo, chosen for its remarkable cost-effectiveness. Nevertheless, through our verification process, we have confirmed their performances are close.
