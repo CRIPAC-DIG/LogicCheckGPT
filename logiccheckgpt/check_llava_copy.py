@@ -13,7 +13,8 @@ from openai import OpenAI
 from typing import List
 from PIL import Image
 from transformers import AutoTokenizer 
-sys.path.append("path/to/LLaVA")                           # LLaVA code path
+sys.path.append("/data0/wujunfei/mllm/LLaVA")
+#sys.path.append("path/to/LLaVA")                           # LLaVA code path
 from llava.model.builder import load_pretrained_model
 from llava.mm_utils import get_model_name_from_path
 from llava.conversation import conv_templates, SeparatorStyle
@@ -32,7 +33,8 @@ from llava.constants import (
     IMAGE_PLACEHOLDER,
 )
 
-model_path = "path/to/liuhaotian/llava-v1.5-7b"
+model_path = "/data0/wujunfei/transformers/liuhaotian/llava-v1.5-7b"
+# model_path = "path/to/liuhaotian/llava-v1.5-7b"
 
 tokenizer, model, image_processor, context_len = load_pretrained_model(
     model_path=model_path,
@@ -43,9 +45,12 @@ tokenizer, model, image_processor, context_len = load_pretrained_model(
 print("Load LLaVA-v1.5-7b Done.")
 
 
+API_SECRET_KEY = "sk-zk20e7f5faa73c10c475247132a5369b2a4670742436a204"
+BASE_URL = "https://api.zhizengzeng.com/v1/"
 NUM_SECONDS_TO_SLEEP = 0.5
 client = OpenAI(
-      api_key="sk-xxxxxxxxxxxxxxxx",
+      api_key=API_SECRET_KEY,               # "sk-xxxxxxxxxxxxxxxx"
+      base_url=BASE_URL
 )
 print("Load LLM Done.")
 
@@ -692,7 +697,8 @@ def detect_non_exist(text):
 
 
 def main(type):
-    image_dir = "path/to/val2014"                                                 # COCO val2014 image dir
+    # image_dir = "path/to/val2014"                                                 # COCO val2014 image dir
+    image_dir = "/data0/wujunfei/mllm/POPE/val2014"
     question_file = "./dataset/pope_coco/coco_50_pope_%s.json" % (type)        # question file
     output_file = "./result/logs_llava_pope/answer_%s_logic_check.json" % (type)           # output file
     torture_log = "./result/logs_llava_pope/torture_%s_%d.json"                        # log file
